@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <div id="presentation-area">
+        <section class="presentation">
+          <!--<img src="image/js_logo.svg" class="logo">-->
+
+          <!--slide 1-->
+          <div class="slide show">
+            <div class="heading">
+              Présentation sur algorithme
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Algorithme<br/>
+              </h3>
+              <p class="sub-title">
+                Concepts de base et avancés
+              </p>
+              <p>Mon portefeuille</p>
+              <p><a href="https://kilian-schropp.surge.sh/">https://kilian-schropp.surge.sh/</a></p>
+            </div>
+          </div>
+
+          <!--slide 2-->
+          <div class="slide">
+            <div class="heading">
+              Organisation des systèmes informatiques - CPU
+            </div>
+            <div class="content">
+              <p><b>Central Processing Unit (CPU) est le cerveau de l'ordinateur</b></p>
+              <img src="image/cpu-archi.svg" style="width:55%">
+              <img src="image/cpu.svg" class="html-css-logo" style="left: 70%; top:45%">
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Bits
+            </div>
+            <div class="content">
+              <p>L'unité de base de la mémoire est appelée bit. Il peut être soit 0 soit 1</p>
+              <iframe id="lightswitch" src="lightswitch.html" width="100%" height="80%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Bits
+            </div>
+            <div class="content">
+              <p>Pourquoi binaire, pourquoi pas Quaternaire?</p>
+              <br>
+              <div class="flex-container">
+                <div>
+                  <img src="image/binary.svg" style="width:100%">
+                </div>
+                <div>
+                  <img src="image/alternative.svg" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Rappel du système décimal
+            </div>
+            <div class="content">
+              <iframe
+                src="https://codepen.io/MarkBoots/full/vYyoMQg"
+                width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Byte
+            </div>
+            <div class="content">
+              <iframe
+                src="https://codepen.io/evanmags/full/ZNWMJW"
+                width="100%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+              <a href="https://www.advanced-ict.info/mathematics/abacus.html">binary abbacus</a>
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Mémoire
+            </div>
+            <div class="content">
+              <p>Toutes les données d'un ordinateur sont stockées dans des séquences de 0 et de 1.</p>
+              <br>
+              <img src="image/lightswitches.svg" style="width:70%">
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Adresse de la mémoire
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <img src="image/houseAdresse.svg" style="width:90%">
+                </div>
+                <div>
+                  <img src="image/adresse.svg" style="width:75%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 9-->
+          <div class="slide">
+            <div class="heading">
+              Algorithme - Pizza exemple
+            </div>
+            <div class="content">
+              <ol>
+                <li>Préchauffer le four à 500 degrés et y mettre la pierre.</li>
+                <li>Sortez la pâte de blé entier de TJ's.</li>
+                <li>Farinez-la et roulez-la</li>
+                <li>Puis brosser avec de l'huile d'olive et une solide poussière de farine de maïs.</li>
+                <li>Retirez la pierre</li>
+                <li>Retournez la croûte sur elle</li>
+                <li>Faire cuire pendant environ cinq minutes</li>
+                <li>Retirez-le</li>
+                <li>Percez les bulles</li>
+                <li>Mettez plus d'huile d'olive sur le dessus.</li>
+                <li>Puis les garnitures: Huile d'olive, tapenade d'olives, ail frais, champignons, oignons, basilic frais, de la mozzarella en tranches et une pile d'anchois.</li>
+                <li>Faites cuire pendant encore 10-15 minutes</li>
+                <li>Retirez-le avec votre palette à pizza et prenez-le en photo</li>
+                <li>Offrez une tranche à votre invité, en priant pour qu'il ait déjà mangé.</li>
+                <li>Consommez-le avec une bonne bouteille de vin rouge bon marché tout en gérant vos nombreuses émotions.</li>
+              </ol>
+              <img src="image/pizza.svg" class="html-css-logo" style="left: 80%; top:15%; width:10%">
+            </div>
+          </div>
+
+          <!--slide 10-->
+          <div class="slide">
+            <div class="heading">
+              Flowchart (Organigramme)
+            </div>
+            <div class="content">
+              <p>L'organigramme est une présentation graphique d'un algorithme
+              </p>
+              <img src="image/Flowchart, start end.svg" width="68%">
+            </div>
+          </div>
+
+          <!--slide 11-->
+          <div class="slide">
+            <div class="heading">
+              Comments
+            </div>
+            <div class="content">
+              <p>Les commentaires sont le moyen le plus simple de documenter votre code. 
+                Les langages de programmation ignorent tout simplement tout texte défini comme un commentaire.
+              </p>
+              <p>Dans un organigramme, un commentaire est un rectangle en pointillés contenant un texte descriptif.</p>
+              <img src="image/flowchart-comment.svg" width="48%">
+            </div>
+          </div>
+
+          <!--slide 12-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est simplement une zone de stockage.
+                  Vous placez des éléments dans vos zones de stockage (variables) 
+                  afin de pouvoir les utiliser et les manipuler dans vos programmes.
+              </p>
+              <img src="image/variable.svg" style="width: 82%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 13-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est le nom d'une cellule de mémoire. 
+                  Elle est dite "variable" car la valeur contenue dans la cellule peut changer. 
+                  Chaque cellule de mémoire a une adresse.
+              </p>
+              <img src="image/boxInRam.svg" style="width: 90%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 14-->
+          <div class="slide">
+            <div class="heading">
+              Variables - Déclaration/Définition dans Flowchart
+            </div>
+            <div class="content">
+              <img src="image/Flowchart variable.svg" style="width: 90%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 15-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Numbers
+            </div>
+            <div class="content">
+              <p>Exercice : Dessinez un organigramme/flowchart pour échanger deux nombres
+              </p>
+              <div class="flex-container">
+                <div style="width:55%">
+                  <img src="image/swapping.svg" style="width:100%; padding-bottom: 1%;">
+                </div>
+                <div style="width:40%">
+                  <img src="image/flowchart-cheatsheat.svg" width="100%">
+                </div>
+              </div>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  Example:
+                  a = 39, b = 25 
+                  après échange:
+                  a = 25, b = 39</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 16-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Numbers
+            </div>
+            <div class="content">
+              <p>Solution:
+              </p>
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/numberchange.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 17-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Les opérateurs arithmétiques sont des opérateurs que vous reconnaîtrez dans l'usage quotidien.
+              </p>
+              <img src="image/arithmetic.svg" class="html-css-logo" style="left: 70%; top:37%;height: 50%;">
+              <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Opérateur</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Explications</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">=<br></td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/declarationEquals.svg" width="92%"></td>
+                    <td class="tg-0lax">Assignation/Affectation</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">+</td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/operatorsPlus.svg" width="92%"></td>
+                    <td class="tg-0lax">Addition/Concaténation</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">-</td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/operatorsMinus.svg" width="92%"></td>
+                    <td class="tg-0lax">Soustraction</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">*</td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/operatorsMultiply.svg" width="92%"></td>
+                    <td class="tg-0lax">Multiplication</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">/</td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/operatorsDivide.svg" width="92%"></td>
+                    <td class="tg-0lax">Division</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">%</td>
+                    <td class="tg-0lax" style="padding:2px"><img src="image/operatorsModulo.svg" width="92%"></td>
+                    <td class="tg-0lax">Modulo, reste de la division entière</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 18-->
+          <div class="slide">
+            <img src="image/handRecieving.svg" class="html-css-logo" style="left: 1%; top: 74%;">
+            <img src="image/handGivingMoney.svg" class="html-css-logo" style="left: 70%; top: 74%;">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Exercice: Calcule le salaire mensuel si ton salaire brut en tant que développeur est de 32000€ par an
+                (réaliste dans la région de Toulouse après la formation). 
+                Le salaire net est d'environ 75% du salaire annuel.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 19-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>
+                Exercice: Il est actuellement minuit. 
+                Quelle heure sera-t-il après 40 heures passées sur une horloge de 12 heures ? 
+                Utilisez l'opérateur modulo % pour calculer l'heure
+              </p>
+              <img src="image/mod.svg" class="html-css-logo" style="left: 40%; top: unset; height: 60%; width:60%">
+              <iframe id="clock" src="time.html" width="1000" height="1000"  frameborder="0"></iframe>
+            </div>
+          </div>
+          
+          <!--slide 20-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <p>Les Strings (chaînes de caractères) sont une représentation du texte</p>
+              <img src="image/Flowchart-string.svg" width="58%">
+            </div>
+          </div>
+
+          <!--slide 21-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - String - Concatenation
+            </div>
+            <div class="content">
+              <p> 
+                Dans la plupart des langages de programmation, si vous utilisez l'opérateur sur des chaînes de caractères, il les joint en ajoutant la deuxième à la première. 
+                Nous garderons le même comportement pour l'organigramme</p>
+                <div style="overflow-y: scroll; height:90%">
+                  <img src="image/Flowchart-string-concat.svg">
+                </div>
+            </div>
+          </div>
+          
+          <!--slide 22-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <p>Une valeur booléenne représente la vérité ou la fausseté, on ou off, oui ou non. Il n'y a que deux valeurs possibles de ce type.
+                  Les mots réservés <b>true</b> et <b>false</b> évaluent ces deux valeurs</p>
+              <iframe id="lightswitch2" src="lightswitch.html" width="100%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 23-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <img src="image/Flowchart-bool.svg" width="50%">
+            </div>
+          </div>
+
+          <!--slide 24-->
+          <div class="slide">
+            <div class="heading">
+              Arrays
+            </div>
+            <div class="content">
+                <div class="flex-container">
+                  <div style="width: 78%;"> 
+                    <p>Un tableau (array) est une <b>collection ordonnée de valeurs</b>. Chaque valeur est appelée un élément, 
+                      et chaque élément a une position numérique dans le tableau, appelée son index.</p>
+                  </div>
+                  <div style="width:20%;">
+                    <img src="image/arrayIndex.svg" style="width: 100%;">
+                  </div>
+                </div>
+                <img src="image/arrayboxes.svg" class="html-css-logo" style="left: 10%; top: 40%; height:50%; width:50%">
+            </div>
+          </div>
+
+          <!--slide 25-->
+          <div class="slide">
+            <div class="heading">
+              Creating Arrays
+            </div>
+            <div class="content">
+              <img src="image/Flowchart-arrays-create.svg">
+            </div>
+          </div>
+
+          <!--slide 26-->
+          <div class="slide">
+            <div class="heading">
+              Lecture des éléments d'un Array
+            </div>
+            <div class="content">
+              <img src="image/Flowchart-arrays-read.svg" width="55%">
+            </div>
+          </div>
+
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Écriture des éléments d'un Array
+            </div>
+            <div class="content">
+              <img src="image/Flowchart-arrays-write.svg" width="55%">
+            </div>
+          </div>
+
+          <!--slide 28-->
+          <div class="slide">
+            <div class="heading">
+              Array Length
+            </div>
+            <div class="content">
+              <p>
+                Chaque tableau possède une propriété de longueur (<b>length</b>). La propriété length spécifie le nombre d'éléments du tableau. 
+                Sa valeur est supérieure d'une unité à l'indice le plus élevé du tableau
+              </p>
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-array-length.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 29-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison 
+            </div>
+            <div class="content">
+                <p>
+                  Les opérateurs de comparaison sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen, 
+                  que nous testerons et sur lequel nous agirons dans une déclaration et un programme plus larges
+                </p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Nom</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0lax">==</td>
+                          <td class="tg-0lax">Egale</td>
+                          <td class="tg-0lax">x == y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">==</td>
+                          <td class="tg-0lax">valeur égale et type égal</td>
+                          <td class="tg-0lax">x == y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">!=</td>
+                          <td class="tg-0lax">Non égal</td>
+                          <td class="tg-0lax"> x != y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;</td>
+                          <td class="tg-0lax">Supérieur à</td>
+                          <td class="tg-0lax">x &gt; y<br></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;</td>
+                          <td class="tg-0lax">Inférieur à</td>
+                          <td class="tg-0lax">x &lt; y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;=</td>
+                          <td class="tg-0lax">Supérieur ou égal à</td>
+                          <td class="tg-0lax">x &gt;= y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;=</td>
+                          <td class="tg-0lax">Inférieur ou égal à</td>
+                          <td class="tg-0lax">x &lt;= y</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    <img src="image/scale.svg" style="width:70%;">
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">1 &lt; 2</td>
+                        <td class="tg-0lax"><img src="image/scale1-2.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 &gt;= 1</td>
+                        <td class="tg-0lax"><img src="image/scale20-1.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">2.0 == 2.0 </td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 != 2.0</td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:red"><b>False</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--slide 31-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison
+            </div>
+            <div class="content">
+              <div>
+                <img src="image/Flowchart-comparison.svg" width="58%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 32-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison
+            </div>
+            <div class="content">
+              <div>
+                <img src="image/Flowchart-comparison-false.svg" width="58%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 33-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison - Quiz
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP5xI3CL5xsW1NHLSrBd3M7fC7aBi0DheBGSPr0BVBTRDisw/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+           <!--slide 34-->
+           <div class="slide">
+            <div class="heading">
+              Opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Il existe trois opérateurs d'expression booléenne dans la plupart des langues de programmation</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Description</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">&&</td>
+                    <td class="tg-0lax">Retourne Vrai si les deux déclarations sont vraies</td>
+                    <td class="tg-0lax">x &lt; 5 &&  x &lt; 10</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">||</td>
+                    <td class="tg-0lax">Renvoie Vrai si l'une des déclarations est vraie.</td>
+                    <td class="tg-0lax">x &lt; 5 || x &lt; 4</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">!</td>
+                    <td class="tg-0lax">Inverse le résultat, renvoie Faux si le résultat est vrai.</td>
+                    <td class="tg-0lax">!(x &lt; 5 && x &lt; 10)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/andornot.svg" style="width:58%; margin-top:1%">
+            </div>
+          </div>
+
+          <!--slide 35-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - &&
+            </div>
+            <div class="content">
+              <p>Elle donne <b>True</b> si les <b>deux conditions</b> sont <b>True</b>. Et elle donne <b>False</b> si <b>l'une ou l'autre</b> des conditions a ou b est <b>False</b>.</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a && b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                </tbody>
+              </table>  
+            </div>
+          </div>
+
+          <!--slide 36-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - AND
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/and-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/andGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 37-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - &&
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-AND.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 38-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - ||
+            </div>
+            <div class="content">
+              <p>Comme l'opérateur <b>&&</b>, l'opérateur <b>||</b> vérifie plusieurs conditions. Mais il renvoie <b>True</b> lorsque <b>l'une ou l'autre ou les deux conditions</b> individuelles sont vraies (True) :</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a || b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 39-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - OR
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/or-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/orGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 40-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - ||
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-OR.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 41-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - !
+            </div>
+            <div class="content">
+              <p>L'opérateur <b>not</b> s'applique à une seule condition. Et il inverse le résultat de cette condition, <b>True</b> devient <b>False</b> et <b>False</b> devient <b>True</b>.</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">! a</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <img src="image/uno-reverse.svg" class="html-css-logo" style="left: 40%;top: 30%;height: 66%; width:unset">
+            </div>
+          </div>
+                  
+          <!--slide 42-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - NOT
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/not-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+              
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/notGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 43-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - ||
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-not.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 44-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Lorsque vous mélangez des opérateurs logiques dans une expression, la plupart des langages de programmation les évaluent dans 
+                l'ordre appelé "précédence des opérateurs".</p>
+
+              <p>L'exemple suivant montre la préséance des opérateurs <b>!</b>, <b>&&</b>, et <b>||</b> :</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Prédominance</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">!</td>
+                    <td class="tg-0lax">Haut</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">&&</td>
+                    <td class="tg-0lax">Moyen</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">||</td>
+                    <td class="tg-0lax">Faible</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/dominance.svg" class="html-css-logo" style="left: 36%;top: 45%;height: unset; width:50%">
+            </div>
+          </div>
+
+          <!--slide 45-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <table class="tg" style="height:50%">
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">a || b && c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">a || (b && c)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a && b || c && d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">(a && b) || (c && d)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a && b && c || d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((a && b) && c) || d</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">! a && b || c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((! a) && b) || c</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - Quiz 
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNF6SkqXJOZYB8bO8pOl9V3bAJG4Is5IY7pEk0DuBkCrCFjA/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>            </div>
+          </div>
+
+          <!--slide 47-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:40%">
+                  <p>Ce chapitre présente l'Opération conditionnelle, qui est la principale instruction utilisée 
+                    pour sélectionner des actions alternatives en fonction des résultats des tests.
+                  </p>
+                </div>
+                <div style="width:60%;">
+                  <img src="image/ifelse.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 48-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Format général 
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-if-else-toulouse.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 49-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Un autre exemple
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <img src="image/flowchart-if-else.svg">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 50-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Exercice
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Faites un message d'accueil "bonne journée" si l'heure est inférieure à 18:00.
+                Pour obtenir l'heure actuelle, nous demandons à l'utilisateur de la saisir.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 51-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Exercice
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Maintenant, nous prolongeons l'exercice précédent et souhaitons "Bonne soirée" après 18:00.
+              </p>
+            </div>
+          </div>
+
+          
+          <!--slide 52-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Exercice
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Ok maintenant, la dernière étape est de souhaiter une "bonne matinée" avant 9:00.
+              </p>
+            </div>
+          </div>
+          
+          <!--slide 53-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Nested
+            </div>
+            <div class="content">
+              <p>Nous pouvons imbriquer les opérations conditionnelle bien sûr</p>
+              <img src="image/flowchart-nested-if.svg" width="55%">
+            </div>
+          </div>
+          
+          <!--slide 54-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation - Exercice
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Comme je viens d'Allemagne, nous disons autre chose selon l'heure de la journée. 
+                Développons notre exercice en vérifiant si nous sommes en Allemagne ou non et en saluant dans la langue correspondante.
+              </p>
+            </div>
+          </div>
+                    
+          
+          <!--slide 55-->
+          <div class="slide">
+            <div class="heading">
+              Conditional operation chained condition - Exercice
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Le coût d'entrée dans un parc pour enfants est de 10€ pour toute personne âgée de 4 à 12 ans. 
+                Les autres personnes ne paient que 6€. 
+                Écrivez un opération conditionnelle utilisant <b>&&</b> qui vérifie la tranche d'âge et ajuste le prix en conséquence.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 56-->
+          <div class="slide">
+            <div class="heading">
+              Loops
+            </div>
+            <div class="content">
+              <p>Je vais présenter les les deux principales constructions de boucles du langage - des énoncés qui répètent une action encore et encore</p>
+              <iframe id="loop" src="image/loop.svg" width="45.5%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 57-->
+          <div class="slide">
+            <div class="heading">
+              Loops
+            </div>
+            <div class="content grid center" style="overflow-y: scroll; height:80%">
+              <img src="image/flowchart-while.svg">
+            </div>
+          </div>
+
+          <!--slide 58-->
+          <div class="slide">
+            <div class="heading">
+              Loops - break, continue
+            </div>
+            <div class="content grid center">
+              <p class="sub-title"><b>break: </b>Saute hors de la boucle la plus proche (au-delà de l'énoncé de la boucle).</p>
+
+              <p class="sub-title"><b>continue: </b>Saut au sommet de la boucle la plus proche (à la ligne d'en-tête de la boucle).</p>
+            </div>
+          </div>
+
+          <!--slide 59-->
+          <div class="slide">
+            <div class="heading">
+              Loops - break
+            </div>
+            <div class="content" style="overflow-y: scroll; height:80%">
+              <img src="image/flowchart-while-break.svg">
+            </div>
+          </div>
+
+          <!--slide 60-->
+          <div class="slide">
+            <div class="heading">
+              Loops - continue
+            </div>
+            <div class="content" style="overflow-y: scroll; height:80%">
+              <img src="image/flowchart-while-continue.svg">
+            </div>
+          </div>
+
+          <!--slide 61-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">Comptez de 1 à 100 en utilisant une boucle et affichez chaque étape sur la console avec print().</p>
+            </div>
+          </div>
+
+          <!--slide 62-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">imprimer tous les éléments d'une array en utilisant une boucle</p>
+            </div>
+          </div>
+
+          <!--slide 63-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - AND
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/and-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/andGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 64-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - NOT
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/not-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+              
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/notGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 65-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - OR
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/or-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/orGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - NAND (NOT AND)
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/nand-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/nandGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 67-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - NOR (NOT OR)
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/nor-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/norGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - XOR (EXCLUSIVE OR)
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/xor-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/norGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 69-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - Half Adder/Bit addition (exemple d'application)
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/help/documents/half-adder.logicly&lesson_type=help"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">SUM</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">CARRY</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+       
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <input type="number" id="index" name="index" min="1" max="69" value="1" style="width:20%"> of 69
+        </section>
+
+        <section class="navigation">
+          <button id="full-screen" class="btn-screen show">
+            <i class="fas fa-expand"></i>
+          </button>
+
+          <button id="small-screen" class="btn-screen">
+            <i class="fas fa-compress"></i>
+          </button>
+
+          <button id="left-btn" class="btn">
+            <i class="fas fa-solid fa-caret-left"></i>
+          </button>
+
+          <button id="right-btn" class="btn">
+            <i class="fa-solid fa-caret-right"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
