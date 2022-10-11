@@ -267,3 +267,7 @@ a {
 .code{
   margin-bottom: 1rem;
 }
+
+pre{
+  white-space: pre-line;
+}
