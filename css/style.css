@@ -272,6 +272,17 @@ pre{
   white-space: pre-line;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  color: #ffd040ff;
+  background-clip: border-box;
+  border-radius: 20px/50px;
+  background-color: #212121;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
 .box {
   margin: 0 auto;
   background: rgba(255,255,255,0.3);
