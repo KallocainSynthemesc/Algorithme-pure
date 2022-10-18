@@ -12,6 +12,199 @@
     <div class="container">
       <div id="presentation-area">
         <section class="presentation">
+          <a id="cheatsheet" class="button box" href="#popup1">Aide-mémoire</a>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h1>Aide-mémoire</h1>
+              <a class="close" href="#">&times;</a>
+              <div class="content" style="overflow-y: scroll; height:95%">
+                <h2>Pseudocode</h2>
+                <br>
+                <ol>
+                  <li>L'affectation représentée par le signe : <b>=</b></li>
+                  <li>L'alternative représentée par la structure : <b>SI</b> (condition) <b>ALORS</b> (instruction) <b>SINON</b> (instruction)</li>
+                  <li>La répétition : <b>REPETER POUR</b> (variable) <b>DE</b> (début nombre) <b>JUSQU'À</b> (fin nombre) (instructions)</li>
+                  <li>La répétition conditionnelle : <b>TANT QUE</b>(condition)</li>
+                  <li>La séquence d'instruction : <b>FIN</b>(mot-clé)</li>
+                </ol>
+                <br>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode anglais</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple anglais</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">SI (condition) ALORS (instruction) SINON (instruction)</td>
+                      <td class="tg-0lax" style="width:40%">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            SI <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">2</span> ALORS
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;1 est plus petit que 2&quot;</span>
+                            SINON
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;2 est plus petit que 1&quot;</span>
+                            FIN SI</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax">if (condition) then (instruction) else (instruction)<br></td>
+                      <td class="tg-0lax" style="width:40%">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            <span style="color: #008800; font-weight: bold">if</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">2</span> then
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;1 est plus petit que 2&quot;</span>
+                            <span style="color: #008800; font-weight: bold">else</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;2 est plus petit que 1&quot;</span>
+                            end <span style="color: #008800; font-weight: bold">if</span></pre>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">REPETER POUR (variable) DE (début nombre) JUSQU'À (fin nombre) (instructions)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">REPETER POUR index DE <span style="color: #0000DD; font-weight: bold">1</span> JUSQU'À 100
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output index
+                          FIN REPETER</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax">loop for (variable) from (dèbut nombre) to (fin nombre) (instructions)<br></td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            loop <span style="color: #008800; font-weight: bold">for</span> index <span style="color: #008800; font-weight: bold">from</span> <span style="color: #0000DD; font-weight: bold">1</span> to <span style="color: #0000DD; font-weight: bold">100</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output index
+                            end loop</pre>
+                         </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">TANT QUE (condition)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            fini <span style="color: #333333">=</span> faux
+                            TANT QUE pas fini
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            FIN TANT QUE</pre>
+                        </div>
+                        </td>
+                      <td class="tg-0lax">loop while (condition)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            done <span style="color: #333333">=</span> false
+                            loop <span style="color: #008800; font-weight: bold">while</span> <span style="color: #000000; font-weight: bold">not</span> done
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            end <span style="color: #008800; font-weight: bold">while</span></pre>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">FIN (mot-clé)</td>
+                      <td class="tg-0lax"><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">FIN TANT QUE<span style="color: #333333">/</span>FIN SI<span style="color: #333333">/</span>FIN REPETER</pre></div>
+                      </td>
+                      <td class="tg-0lax">end (mot-clé)</td>
+                      <td class="tg-0lax"><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">end loop<span style="color: #333333">/</span>end <span style="color: #008800; font-weight: bold">if</span></pre></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">=</td>
+                      <td class="tg-0lax">nombre = 28</td>
+                      <td class="tg-0lax">=</td>
+                      <td class="tg-0lax">number = 28</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h3>Arrays/List/Tablaux</h3>
+                <ol>
+                  <li><b>len(tableau)</b> pour obtenir le nombre total d'éléments dans le tableau</li>
+                  <li><b>tableau.append(élément)</b> pour ajouter un nouvel élément à la fin du tableau</li>
+                  <li><b>tableau.pop(position)</b> pour supprimer un élément à une position spécifiée dans un tableau</li>
+                </ol>
+                <br>
+                <h2>Flowchart</h2>
+                <br>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Flowchart forme</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Explications</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/begin-end.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/begin-end-exemple.svg" width="50%"><br></td>
+                      <td class="tg-0lax">Marque le début et la fin d'un programme</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowcomment.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowcomment-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">documente le code. Ne s'exécute pas</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowdeclaration.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowdeclaration-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">déclare une variable et l'initialise potentiellement</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowoperator.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowoperator-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">modifie le contenu de la variable en fonction d'une opération</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/condition.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/condition-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">tests ou branchements conditionnels</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h3>Les différentes structures de l'organigramme de programmation</h3>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Flowchart</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            SI <span style="color: #0000DD; font-weight: bold">condition</span> ALORS
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>traitment 1
+                            SINON
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>tratiment 2
+                            FIN SI</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax" style="padding:2px; width:65%"><img src="image/sialorssinon.svg" width="92%"><br></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            fini <span style="color: #333333">=</span> faux
+                            TANT QUE pas fini
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            FIN TANT QUE</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax" style="padding:2px; width:65%"><img src="image/boucle.svg" width="92%"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
           <!--<img src="image/js_logo.svg" class="logo">-->
 
           <!--slide 1-->

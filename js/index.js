@@ -11,6 +11,7 @@ var toRightBtn = document.querySelector("#right-btn");
 let presentationController = document.querySelector("#presentation-area");
 var toFullScreenBtn = document.querySelector("#full-screen");
 var toSmallScreenBtn = document.querySelector("#small-screen");
+let cheatsheet = document.querySelector('#cheatsheet');
 
 // initailize defualt values
 var screenStatus = 0;
@@ -93,6 +94,7 @@ function fullScreenMode() {
   //presentationController.style.fontSize = "1.8em";
   toFullScreenBtn.classList.remove("show");
   toSmallScreenBtn.classList.add("show");
+  cheatsheet.style.color = 'black'
 
   screenStatus = 1;
 }
@@ -103,6 +105,7 @@ function smallScreenMode() {
   toFullScreenBtn.classList.add("show");
   toSmallScreenBtn.classList.remove("show");
   presentationController.style.fontSize = "unset";
+  cheatsheet.style.color = 'white'
   screenStatus = 0;
 }
 
