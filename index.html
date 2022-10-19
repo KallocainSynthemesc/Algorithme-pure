@@ -1909,6 +1909,417 @@
             </div>
           </div>
 
+          <!--slide 67-->
+          <div class="slide">
+            <div class="heading">
+              Functions
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:50%;">
+                  <p>En termes simples, une fonction est un outil qui regroupe un ensemble d'instructions de manière à ce qu'elles puissent 
+                    être exécutées plusieurs fois dans un programme - une procédure packagée invoquée par son nom.
+                  </p>
+                  <ul>
+                    <li>Une fonction est un bloc de code qui ne s'exécute que lorsqu'il est appelé.</li>
+                    <li>Vous pouvez transmettre des données, appelées paramètres, à une fonction.</li>
+                    <li>Une fonction peut renvoyer des données comme résultat.</li>
+                  </ul>
+                </div>
+                <div>
+                    <img src="image/function.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Pourquoi utiliser des fonctions ?
+            </div>
+            <div class="content">
+              <p>Avant d'entrer dans les détails, il faut établir une image claire de ce que sont les fonctions</p>
+              <ul>
+                <li><b>Maximiser la réutilisation du code et minimiser la redondance</b></li>
+                <p>Les fonctions constituent le moyen le plus simple de d'emballer la logique que 
+                  vous souhaitez utiliser à plusieurs endroits et à plusieurs reprises
+                </p>
+                <li><b>Procedural decomposition</b></li>
+                <p>Les fonctions constituent également un outil permettant de diviser les systèmes en parties 
+                  ayant des rôles bien définis. Par exemple, pour faire une <b>pizza</b> à partir de rien, 
+                  il faut commencer par mélanger la pâte, l'étaler, ajouter les garnitures, la faire cuire, 
+                  etc. Si vous deviez programmer un robot pizzaïolo, les fonctions vous aideraient à diviser 
+                  la tâche globale de "fabrication d'une <b>pizza</b>" en plusieurs parties, une fonction pour 
+                  chaque sous-tâche du processus. Il est plus facile d'implémenter les petites tâches 
+                  isolément que d'implémenter l'ensemble du processus en une seule fois.</p>
+              </ul>
+              <img src="image/pizza.svg" class="html-css-logo" style="left: 60%; top:76%; width:10%">
+            </div>
+          </div>
+
+          <!--slide 69-->
+          <div class="slide">
+            <div class="heading">
+              Functions - def Statements ?
+            </div>
+            <div class="content">
+              <p>L'instruction def crée un objet fonction et l'affecte à un nom. Son format général est le suivant :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">def</span> <span style="color: #00aa00">name</span>(arg1, arg2,... argN):
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>statements
+                end <span style="color: #0000aa">def</span>
+                </pre></div>
+    
+              <p>def se compose d'une ligne d'en-tête suivie d'un bloc d'instructions, généralement indenté. Le bloc d'instructions devient le corps de la fonction, 
+                c'est-à-dire le code que le Pseudocode exécute chaque fois que la fonction est appelée par la suite.
+              </p>
+              <br>
+              <p style="width: 40%;">L'instruction return peut apparaître n'importe où dans le corps d'une fonction ; 
+                lorsqu'elle est atteinte, elle met fin à l'appel de la fonction et renvoie un résultat à l'appelant
+              </p>  
+              <img src="image/functiondescription.svg" class="html-css-logo" style="left: 45%; top:53%; width:47%; height:47%">
+            </div>
+          </div>
+
+          <!--slide 70-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Simple
+            </div>
+            <div class="content">
+              <iframe style='width:70%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+              <div style="width: 29%; display: inline-block; vertical-align: top;">
+                <p>Pseudocode:</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #0000aa">def</span> <span style="color: #00aa00">my_function</span>(fname)
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output fname,<span style="color: #aa5500">&quot; Refsnes&quot;</span>
+                    end <span style="color: #0000aa">def</span>
+                    
+                    <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Emil&quot;</span>)
+                    <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Tobias&quot;</span>)
+                    <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Linus&quot;</span>)</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 71-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Calls/Appelle
+            </div>
+            <div class="content">
+              <p>L'instruction <b>def</b> crée une fonction mais ne l'appelle pas. 
+                Après l'exécution de l'instruction <b>def</b>, vous pouvez appeler (exécuter) 
+                la fonction dans votre programme en ajoutant des parenthèses après le nom de la fonction
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000aa">def</span> <span style="color: #00aa00">times</span>(x, y) <span style="color: #aaaaaa; font-style: italic"># Créer et attribuer une fonction</span>
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000aa">return</span> x * y 
+                  end <span style="color: #0000aa">def</span></pre>
+              </div>
+    
+              <p>Les parenthèses peuvent éventuellement contenir un ou plusieurs arguments 
+                d'objet, qui seront passés (assignés) aux noms de l'en-tête de la fonction
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  times(<span style="color: #009999">2</span>, <span style="color: #009999">4</span>) <span style="color: #aaaaaa; font-style: italic">// Arguments in parentheses</span>
+                  <span style="color: #aaaaaa; font-style: italic">//La fonction renvoie 8</span></pre>
+              </div>
+
+              <p>Maintenant, regardez ce qui se passe quand la fonction est appelée une autre fois, avec des objets très différents types:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  times(<span style="color: #aa5500">&#39;Ni&#39;</span>, <span style="color: #009999">4</span>) <span style="color: #aaaaaa; font-style: italic">// Les fonctions sont &quot;sans typologie&quot;.&quot;</span>
+                  <span style="color: #aaaaaa; font-style: italic">//La fonction renvoie &#39;NiNiNiNi</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 73-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <p>Les scopes permettent d'éviter les conflits de noms dans le code de votre programme :
+                les noms définis dans une unité de programme n'interfèrent pas avec les noms d'une autre unité.
+              </p>
+              <br>
+              <div class="flex-container">
+                <div>
+                  <p>Lorsque vous utilisez un nom dans un programme, Python crée, modifie ou recherche le nom dans 
+                    ce que l'on appelle un <b>espace de noms, c'est-à-dire un endroit où vivent les noms</b>.
+                  </p>
+                  <p>L'endroit où vous attribuez un nom dans votre code source détermine l'espace de nom dans lequel il va vivre et donc sa visibilité.</p>
+                </div>
+                <div>
+                  <img src="image/variable-living-space.svg" style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--slide 74-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <p>les variables peuvent être assignées à trois endroits différents, correspondant à trois scopes différentes
+              </p>
+              <ul>
+                <li>Si une <b>variable</b> est assignée à l'intérieur d'une <b>def</b>, elle est <b>locale</b> à cette fonction.</li>
+                <li>Si une <b>variable</b> est assignée dans une <b>def</b> englobante, elle est <b>non locale</b> aux fonctions imbriquées.</li>
+                <li>Si une <b>variable</b> est assignée en dehors de toutes les <b>defs</b>, elle est <b>globale</b> à l'ensemble du fichier.</li>
+              </ul>
+              <br>
+              <p>Par exemple, dans le fichier de module suivant, l'affectation X = 99 crée une variable globale nommée X (visible partout dans ce fichier), 
+                mais l'affectation X = 88 crée une variable locale X (visible uniquement dans l'instruction def) :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  X = <span style="color: #009999">99</span> <span style="color: #aaaaaa; font-style: italic"># Global (module) scope X</span>
+                  <span style="color: #0000aa">def</span> <span style="color: #00aa00">func</span>()
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>X = <span style="color: #009999">88</span> <span style="color: #aaaaaa; font-style: italic"># Local (function) scope X: une autre variable</span>
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output x
+                  end <span style="color: #0000aa">def</span>
+
+                  <span style="color: #00aa00">func</span>() <span style="color: #aaaaaa; font-style: italic">#il affiche 88</span>
+                  output X</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 77-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Nested Scope Examples
+            </div>
+            <div class="content">
+              <p>le <b>def</b> est simplement une instruction exécutable, qui peut apparaître partout où une autre instruction peut apparaître
+                , y compris imbriquée dans un autre <b>def</b>. Ici, le <b>def</b> imbriqué s'exécute pendant qu'un appel à la fonction <b>f1</b> s'exécute ;
+                  il génère une fonction et l'assigne au nom <b>f2</b>, une variable locale dans le scope local de <b>f1</b>. En un sens, <b>f2</b> est une 
+                  fonction temporaire qui ne vit que pendant l'exécution de (et n'est visible que par le code de) la fonction <b>f1</b> qui l'entoure
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">X = <span style="color: #009999">99</span> <span style="color: #aaaaaa; font-style: italic">// Global scope name: pas utilisé</span>
+                <span style="color: #0000aa">def</span> <span style="color: #00aa00">f1</span>()
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>X = <span style="color: #009999">88</span> <span style="color: #aaaaaa; font-style: italic">// Enclosing def local</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000aa">def</span> <span style="color: #00aa00">f2</span>()
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #aaaaaa; font-style: italic">// Reference fait dans nested def</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output X
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>end <span style="color: #0000aa">def</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #00aa00">f2</span>()
+                end <span style="color: #0000aa">def</span>
+                <span style="color: #00aa00">f1</span>() <span style="color: #aaaaaa; font-style: italic">// affiche 88: enclosing def local</span>
+                </pre></div>
+
+            </div>
+          </div>
+
+          <!--slide 80-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Les diapositives suivantes poursuivent l'histoire des fonctions en étudiant les concepts du passage d'arguments,
+                      c'est-à-dire la façon dont les objets sont envoyés aux fonctions en tant que données d'entrée. 
+                  </p>
+                  <p>Comme nous le verrons, <b>les arguments</b> (aussi appelés paramètres) sont affectés à des <b>noms dans une fonction</b>, 
+                    mais ils ont plus à voir avec les références d'objets qu'avec les scopes de variables.</p>
+                </div>
+                <div>
+                  <img src="image/arguments.svg" style="width: 90%;">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 81-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width: 60%;">
+                  <p><b>Les arguments sont transmis en assignant automatiquement des objets aux noms de variables locales. </b>
+                  </p>
+                  <p>Les arguments de fonction (références à des objets partagés envoyées par l'appelant) ne sont qu'un autre 
+                    exemple d'affectation à l'œuvre. Les objets passés en tant qu'arguments ne sont jamais copiés automatiquement.
+                  </p>
+                  <p>
+                    <b>C'est un peu comme faire : box = box2 = "text"</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/argumentPassing.svg" style="width: 85%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 82-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div>
+                  <p><b>L'affectation des noms d'arguments à l'intérieur d'une fonction n'affecte pas l'appelant.</b>
+                  </p>
+                  <p>Les noms des arguments dans l'en-tête de la fonction deviennent de nouveaux noms locaux lorsque la fonction s'exécute, 
+                    dans la portée de la fonction. Il n'y a pas d'alias entre les noms d'arguments de la fonction 
+                    et les noms de variables dans le scope de l'appelant.
+                  </p>
+                  <p>
+                    <b>C'est un peu comme faire :</b>
+                  </p>
+                  <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      box <span style="color: #666666">=</span> box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;text&quot;</span>
+                      box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;nouveau texte&quot;</span></pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/argumentAssignment.svg" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 83-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width:64%">
+                  <p><b>La modification de l'argument d'un objet mutable dans une fonction peut avoir un impact sur l'appelant.</b>
+                  </p>
+                  <p>D'un autre côté, comme les arguments sont simplement affectés à des objets transmis, 
+                    les fonctions peuvent modifier les objets mutables transmis sur place, et les résultats peuvent affecter l'appelant. 
+                    Les arguments mutables peuvent être des entrées et des sorties pour les fonctions
+                  </p>
+                  <p>
+                    <b>Exemple :</b>
+                  </p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr = [<span style="color: #009999">1</span>,<span style="color: #009999">2</span>,<span style="color: #009999">3</span>,<span style="color: #009999">4</span>]
+                      <span style="color: #0000aa">def</span> <span style="color: #00aa00">mutate</span>(arr)
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>arr[<span style="color: #009999">0</span>] = <span style="color: #009999">100</span>
+                      end <span style="color: #0000aa">def</span>
+                      <span style="color: #00aa00">mutate</span>(arr)
+                      output arr[<span style="color: #009999">0</span>]</pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/mutable.svg" style="width: 100%;">
+                  <div style="background: #d4b2b2; overflow:auto;width:auto;border:solid rgb(71, 29, 29);border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr = [<span style="color: #009999">1</span>,<span style="color: #009999">2</span>,<span style="color: #009999">3</span>,<span style="color: #009999">4</span>]
+                      <span style="color: #0000aa">def</span> <span style="color: #00aa00">mutate</span>(arr)
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>arr = [<span style="color: #009999">100</span>,<span style="color: #009999">200</span>,<span style="color: #009999">300</span>,<span style="color: #009999">400</span>]
+                      end <span style="color: #0000aa">def</span>
+                      <span style="color: #00aa00">mutate</span>(arr)
+                      output arr[<span style="color: #009999">0</span>]</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 84-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Nombre d'arguments
+            </div>
+            <div class="content">
+              <p>Par défaut, une fonction doit être appelée avec le nombre correct d'arguments. 
+                Cela signifie que si votre fonction attend 2 arguments, vous devez appeler la fonction avec 2 arguments, ni plus, ni moins. 
+              </p>
+              <p>Cette fonction attend 2 arguments, et reçoit 2 arguments :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000aa">def</span> <span style="color: #00aa00">my_function</span>(fname, lname)
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output fname,lname
+                  end <span style="color: #0000aa">def</span>
+                
+                  <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Emil&quot;</span>, <span style="color: #aa5500">&quot;Refsnes&quot;</span>)</pre>
+              </div>
+    
+              <p>Cette fonction attend 2 arguments, mais n'en reçoit qu'un seul:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000aa">def</span> <span style="color: #00aa00">my_function</span>(fname, lname)
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output fname,lname
+                  end <span style="color: #0000aa">def</span>
+                  <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Emil&quot;</span>)</pre>
+              </div>
+    
+            </div>
+          </div>
+
+          <!--slide 88-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Paramètre Valeur par défaut
+            </div>
+            <div class="content">
+              <p>
+                Si nous appelons la fonction sans argument, elle utilise la valeur par défaut
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000aa">def</span> <span style="color: #00aa00">my_function</span>(country = <span style="color: #aa5500">&quot;France&quot;</span>):
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="color: #aa5500">&quot;mon pays de naissance est &quot;</span>, country
+                  end <span style="color: #0000aa">def</span>
+                  <span style="color: #00aa00">my_function</span>(<span style="color: #aa5500">&quot;Germany&quot;</span>)
+                  <span style="color: #00aa00">my_function</span>()
+                  </pre></div>
+  
+              <img src="image/defaultParameter.svg" style="width:30%">
+            </div>
+          </div>
+
+          <!--slide 89-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Valeurs de retour
+            </div>
+            <div class="content">
+              <p>
+                Pour qu'une fonction renvoie une valeur, utilisez l'instruction return :
+              </p>
+              <iframe style='width:70%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+              <div style="width: 29%; display: inline-block; vertical-align: top;">
+                <p>Pseudocode:</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #0000aa">def</span> <span style="color: #00aa00">my_function</span>(x):
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000aa">return</span> <span style="color: #009999">5</span> * x
+                    end <span style="color: #0000aa">def</span>
+                    
+                    <span style="color: #00aa00">output</span> my_function(<span style="color: #009999">3</span>)
+                    <span style="color: #00aa00">output</span> my_function(<span style="color: #009999">5</span>)
+                    <span style="color: #00aa00">output</span> my_function(<span style="color: #009999">9</span>)</pre>
+                </div>   
+              </div>
+            </div>
+          </div>
+
           <!--slide 83-->
           <div class="slide">
             <div class="heading">
